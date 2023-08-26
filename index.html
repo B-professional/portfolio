@@ -4,12 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My_portfolio</title>
+    <title>My_portpolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="icon" href="./Image/logo1.jpg">
     <script src="app.js"></script>
+    <!--CDN FIle-->
+    <link rel="stylesheet" href="cdn.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -50,9 +56,9 @@
     <!-- Home page Top-->
 
     <div class="px-4 pt-5 my-5 mt-0 text-center border-bottom gradient-background">
-        <h1 class="display-4 fw-bold color-bg">Welcome to <span class= "typewriter" style="color: rgb(174, 174, 174);">My Portfolio</span></h1>
+        <h1 class="display-4 fw-bold color-bg text-focus-in">Welcome to <span class= "typewriter" style="color: rgb(174, 174, 174);">My Portpolio</span></h1>
         <div class="col-lg-6 mx-auto">
-            <p class="lead mt-4">👋 Hey there! I'm Bhavesh, a web developer passionate about turning ideas into
+            <p class="lead mt-4 scale-in-hor-left ">👋 Hey there! I'm Bhavesh, a web developer passionate about turning ideas into
                 pixel-perfect realities.</br>
                 💡 With a love for clean code and creative design, I specialize in crafting seamless online experiences
                 that leave a lasting impact.
@@ -64,17 +70,17 @@
             <div class="container pt-5">
                 <img src="./Image/photo white background.jpg" class="img-fluid shadow-lg" style="border-radius: 50%;"
                     alt="My_image" width="150" loading="lazy">
-                <h2 class="lead mt-4">Bhavesh Yadav</h2>
+                <h2 class="lead mt-4 ">Bhavesh Yadav</h2>
             </div>
         </div>
     </div>
 
     <!--Features of knowleage-->
     <div class="container px-4 py-5" id="icon-grid">
-        <h2 class="pb-2 border-bottom">SKILLS</h2>
+        <h2 class="pb-2 border-bottom" data-aos="zoom-in-right">SKILLS</h2>
 
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-            <div class="col d-flex align-items-start">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5" data-aos="flip-up">
+            <div class="col d-flex align-items-start" >
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" fill="currentColor" class="bi bi-filetype-html"
                     viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
@@ -149,12 +155,12 @@
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
                 <img src="./Image/fullstack-web.gif" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
-                    width="900" loading="lazy">
+                    width="900" loading="lazy" data-aos="fade-left" >
             </div>
             <div class="col-lg-6">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" data-aos="fade-right" >
                     Design & Development</h1>
-                <p class="lead">I started learning to code when I was 18 years old because I wanted to make my own video
+                <p class="lead" data-aos="fade-right" >I started learning to code when I was 12 years old because I wanted to make my own video
                     games. Over time, I have gained a wealth of experience designing and developing mobile and web
                     applications.</p>
             </div>
@@ -164,13 +170,13 @@
     <div class="container col-xxl-8 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" data-aos="fade-left">
                     Hot Wings Challenge</h1>
-                <p class="lead">
+                <p class="lead" data-aos="fade-left">
                     But my best skill is actually in eating hot wings. I am the undisputed queen of hot wing challenges.
                     Ghost Peppers and Carolina Reapers are my favourite snacks.</p>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-right">
                 <img src="./Image/backstack.gif" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="900"
                     loading="lazy">
             </div>
@@ -178,7 +184,7 @@
     </div>
 <!--middle design page -->
 
-<div id="carouselExampleIndicators" class="carousel slide container" data-bs-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide container" data-bs-ride="carousel" data-aos="flip-down">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -201,6 +207,11 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+
+
+  <!--Try Web-->
+
+  
     <!-- Footer-->
     <div class="gradient-background-footer mb-0 pb-0">
         <div class="container">
@@ -218,6 +229,16 @@
             </footer>
         </div>
     </div>
+    <!-- AOS DATA-->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 300,
+        
+      });
+    </script>
 </body>
 
 </html>
