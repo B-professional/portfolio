@@ -1,0 +1,132 @@
+*{
+  margin-top: 0%;
+}
+
+
+
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #063e63, #f57d6d);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    color: white;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+.gradient-background-footer {
+    background: linear-gradient(300deg, #020d11, #011e31, #1c83f8);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    color: white;
+ 
+   
+    
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+  .logo-image{
+    width: 50px;
+    padding-right: 12px;
+  }
+
+  /* auto writting code */
+  .typewriter{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+.btn{
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #04AA6D;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+/* Navbar center content */
+
+.collapse{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.nav-item{
+  padding-left: 3rem;
+}
+
+.about-text,.us-text{
+   
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 50px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
